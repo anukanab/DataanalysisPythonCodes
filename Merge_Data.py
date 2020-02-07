@@ -22,7 +22,7 @@ def getTumorSamplesAbbreviatedIDs(file_1, file_2):
     for ID in TCGA_list:
         ID_parts=ID.split("-")
         #print ID_parts;sys.exit()
-        TCGA_reformat=('-'.join(ID_parts[0:3]))
+        TCGA_reformat=('.'.join(ID_parts[0:3]))
             #print TCGA_reformat
         TCGA_final.append(TCGA_reformat)
     
@@ -46,7 +46,7 @@ def getTumorSamplesAbbreviatedIDs(file_1, file_2):
     return TCGA_final
 
 if __name__ == '__main__':
-    File_1= '/data/salomonis2/NCI-R01/TCGA-BREAST-CANCER/Anukana/SurvivalAnalysis/PSI_EventAnnotation-75p_modified_transposed.txt'
-    File_2='/data/salomonis2/NCI-R01/TCGA-BREAST-CANCER/Anukana/SurvivalAnalysis/clinicaldata.txt'
-    OutputFile='/data/salomonis2/NCI-R01/TCGA_Audrey/LUAD_combined/AltResults/AlternativeOutput/6.28.19_TumorSampelsOnlyAbbreviatedIDs/Hs_RNASeq_top_alt_junctions-PSI_EventAnnotation_TumorSampelsOnly_AbbreviatedID.txt'
+    File_1= '/data/salomonis2/NCI-R01/TCGA-BREAST-CANCER/Anukana/UO1analysis/survival/tcga_rsem_isopct_filtered-transposedp.txt'
+    File_2='/data/salomonis2/NCI-R01/TCGA-BREAST-CANCER/Anukana/UO1analysis/survival/clinicaldata.txt'
+    OutputFile='/data/salomonis2/NCI-R01/TCGA-BREAST-CANCER/Anukana/UO1analysis/survival/MergedFile.txt'
     TCGA_samples_short_barcode = getTumorSamplesAbbreviatedIDs(File_1, File_2)
