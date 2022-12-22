@@ -186,12 +186,12 @@ def CompareOverlap(File1, File2,splicing_factors_file,oncogenes_file, transcript
 
 
 if __name__ == '__main__':
-    #metaData_File1='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/GeneExpression/R1-V7_RBM10_mut/DEGs-LogFold_0.263034405834_rawp/GE.R1-V7_RBM10_mut_vs_NULL.txt'
-    #metaData_File2='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/GeneExpression/R1-V7_RBM10_wt/DEGs-LogFold_0.263034405834_rawp/GE.R1-V7_RBM10_wt_vs_NULL.txt'
-    metaData_File1='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/Splicing_Analysis/SVMOutputs/Splicing_Events_Subgroups/R1-V7_RBM10_mut/Events-dPSI_0.1_adjp/PSI.R1-V7_RBM10_mut_vs_NULL.txt'
-    metaData_File2='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/Splicing_Analysis/SVMOutputs/Splicing_Events_Subgroups/RBM10_mut_other/Events-dPSI_0.1_adjp/PSI.RBM10_mut_other_vs_NULL.txt'
-    SplicingFactors='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/Mutation_data/proteins_splicing_human_summary.csv'
-    Oncogenes='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/Mutation_data/CosmicMutantExportCensus.tsv'
-    TranscriptionFactors='/Volumes/salomonis2/NCI-R01/TCGA_Audrey/clusters_bams/Mutation_data/TF_list_MAtt_Weirauch.txt'
+    #metaData_File1='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/GeneExpression/R1-V7_RBM10_mut/DEGs-LogFold_0.263034405834_rawp/GE.R1-V7_RBM10_mut_vs_NULL.txt'
+    #metaData_File2='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/GeneExpression/R1-V7_RBM10_wt/DEGs-LogFold_0.263034405834_rawp/GE.R1-V7_RBM10_wt_vs_NULL.txt'
+    metaData_File1='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/Splicing_Analysis/SVMOutputs/Splicing_Events_Subgroups/R1-V7_RBM10_mut/Events-dPSI_0.1_adjp/PSI.R1-V7_RBM10_mut_vs_NULL.txt'
+    metaData_File2='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/Splicing_Analysis/SVMOutputs/Splicing_Events_Subgroups/RBM10_mut_other/Events-dPSI_0.1_adjp/PSI.RBM10_mut_other_vs_NULL.txt'
+    SplicingFactors='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/Mutation_data/proteins_splicing_human_summary.csv'
+    Oncogenes='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/Mutation_data/CosmicMutantExportCensus.tsv'
+    TranscriptionFactors='/Volumes/salomonis2/NCI-R01/TCGA_Anu/clusters_bams/Mutation_data/TF_list_MAtt_Weirauch.txt'
     Overlap=CompareOverlap(metaData_File1,metaData_File2, SplicingFactors,Oncogenes,TranscriptionFactors)
     
